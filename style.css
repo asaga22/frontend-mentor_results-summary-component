@@ -1,0 +1,162 @@
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.text-light-lavender {
+    color: hsl(241, 100%, 89%);
+}
+
+.text-dark-grey-blue {
+    color: hsl(224, 30%, 27%);
+}
+
+.text-light-gray {
+    color: gray;
+}
+
+.summary-component {
+    display: flex;
+    border-radius: 20px;
+    width: 550px;
+    height: auto;
+    box-shadow:  20px 20px 60px hsl(221, 100%, 96%), -20px -20px 60px #ffffff;
+}
+
+.sub-card {
+    border-radius: 30px;
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding: 30px;
+}
+
+.sub-card.result {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 90%);
+    margin: 0 auto;
+}
+
+.sub-card.result .score {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.sub-card.result .score .score-value, .max-score {
+    margin: 0px;
+}
+
+.sub-card.result .score .score-value {
+    font-size: 50px;
+}
+
+.sub-card.result .description p{
+    font-size: 12px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: hsl(221, 100%, 96%);
+}
+
+
+.sub-card ul {
+    margin: 0px 0px 40px 0px;
+    padding: 0px;
+}
+
+.sub-card.summary li{
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-card.summary li.score-item .title {
+    display: flex;
+    align-items: center;
+}
+
+.sub-card.summary li.score-item .title img {
+    margin-right: 10px;
+}
+
+li.danger {
+    background-color: hsl(0, 100%, 67%, 10%);
+}
+
+li.warning {
+    background-color: hsl(39, 100%, 56%, 10%);
+}
+
+li.success {
+    background-color: hsl(166, 100%, 37%, 10%)
+}
+
+li.primary {
+    background-color: hsl(234, 85%, 45%, 10%);
+}
+
+li.danger .title {
+    color: hsl(0, 100%, 67%);
+}
+
+li.warning .title {
+    color: hsl(39, 100%, 56%);
+}
+
+li.success .title {
+    color: hsl(166, 100%, 37%)
+}
+
+li.primary .title {
+    color: hsl(234, 85%, 45%);
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    border: 0px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 50%);
+}
+
+@media (max-width: 575.98px) {
+
+    main {
+        min-height: unset;
+    }
+
+    .summary-component {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .sub-card.result {
+        margin: unset;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+}
