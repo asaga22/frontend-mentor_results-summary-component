@@ -44,6 +44,7 @@ renderSummryElement = () => {
 
         // set icon title
         $(template).find(`.title img`).attr(`src`, `${item["icon"]}`);
+        $(template).find(`.title img`).attr(`alt`, `Icon ${item["category"]}`);
 
         //set title text
         $(template).find(`.title span`).text(item["category"]);
